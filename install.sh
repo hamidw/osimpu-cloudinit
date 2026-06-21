@@ -14,12 +14,9 @@ rm -f /etc/profile.d/motd.sh
 echo "" > /etc/issue
 echo "" > /etc/issue.net
 
-# Hapus khusus Opensuse
-echo "" > /etc/motd
-
 # Disable SSH banner
 
-sed -i 's/^#?Banner.*/Banner none/' /etc/ssh/sshd_config
+#sed -i 's/^#?Banner.*/Banner none/' /etc/ssh/sshd_config
 
 # Download dashboard sesuai OS
 
