@@ -26,8 +26,11 @@ fi
 # Download dashboard sesuai OS
 
 case "$OS_ID" in
-ubuntu|debian)
+ubuntu)
 DASHBOARD_URL="https://raw.githubusercontent.com/hamidw/osimpu-cloudinit/main/vps_linux/osimpu_ubuntu.sh"
+;;
+debian)
+DASHBOARD_URL="https://raw.githubusercontent.com/hamidw/osimpu-cloudinit/main/vps_linux/osimpu_debian.sh"
 ;;
 almalinux|rocky)
 DASHBOARD_URL="https://raw.githubusercontent.com/hamidw/osimpu-cloudinit/main/vps_linux/osimpu_almalinux.sh"
