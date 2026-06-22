@@ -6,10 +6,10 @@ OS_ID=$(source /etc/os-release && echo "$ID")
 
 # Hapus branding provider
 
+rm -rf /etc/update-motd.d/10-help-text
+
 rm -rf /etc/profile.d/99-idcloudhost-motd.sh
 rm -rf /etc/profile.d/motd.sh
-
-rm -rf /etc/update-motd.d/10-help-text
 
 # Hapus banner login
 
