@@ -33,7 +33,7 @@ LOAD1=$(awk '{print $1}' /proc/loadavg)
 LOAD5=$(awk '{print $2}' /proc/loadavg)
 LOAD15=$(awk '{print $3}' /proc/loadavg)
 
-# MEMORY (Ubuntu friendly)
+# MEMORY (Debian friendly)
 MEM_TOTAL_KB=$(awk '/MemTotal/ {print $2}' /proc/meminfo)
 MEM_AVAILABLE_KB=$(awk '/MemAvailable/ {print $2}' /proc/meminfo)
 
